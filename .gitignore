@@ -1,0 +1,13 @@
+target/
+
+# Private keys
+*.pem
+*.key
+
+# Environment files
+.env
+.env.*
+
+# IDE files
+.idea/
+.vscode/

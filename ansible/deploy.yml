@@ -1,0 +1,20 @@
+---
+- name: Deploy Employee Management Application
+  hosts: appserver
+  become: true
+
+  tasks:
+
+    - name: Stop existing employee container
+      community.docker.docker_container:
+        name: employee-app
+        state: absent
+
+    - name: Start employee application container
+      community.docker.docker_container:
+        name: employee-app
+        image: employee-management:1.0
+        state: started
+        restart_policy: always
+        ports:
+          - "8081:8081"
