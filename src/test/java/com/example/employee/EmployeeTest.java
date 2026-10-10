@@ -11,15 +11,15 @@ public class EmployeeTest {
 
         Employee employee = new Employee(
                 101,
-                "Raviteja",
-                "raviteja@example.com",
+                "Ravi",
+                "ravi@example.com",
                 "IT",
                 50000
         );
 
         assertEquals(101, employee.getId());
-        assertEquals("Raviteja", employee.getName());
-        assertEquals("raviteja@example.com", employee.getEmail());
+        assertEquals("Ravi", employee.getName());
+        assertEquals("ravi@example.com", employee.getEmail());
         assertEquals("IT", employee.getDepartment());
         assertEquals(50000, employee.getSalary());
     }

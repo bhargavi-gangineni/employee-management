@@ -8,8 +8,8 @@ public class Main {
 
         Employee employee1 = new Employee(
                 101,
-                "Raviteja",
-                "raviteja@example.com",
+                "Ravi",
+                "ravi@example.com",
                 "IT",
                 50000
         );

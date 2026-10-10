@@ -44,8 +44,8 @@ public class WebServer {
 
         manager.addEmployee(new Employee(
                 101,
-                "Raviteja",
-                "raviteja@example.com",
+                "Ravi",
+                "ravi@example.com",
                 "IT",
                 50000
         ));
@@ -250,7 +250,7 @@ public class WebServer {
                         }
 
                         .welcome p {
-                            color: #666;
+                            color: #1f2020;
                             margin-top: 0;
                         }
 
