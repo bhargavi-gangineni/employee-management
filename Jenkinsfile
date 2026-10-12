@@ -28,7 +28,7 @@ pipeline {
                         icacls "%SSH_KEY%" /inheritance:r /grant:r "SYSTEM:F" || exit /b 1
 
                         "%DOCKER_EXE%" info || exit /b 1
-                        "%DOCKER_EXE%" buildx build --load -t employee-management:1.0 . || exit /b 1
+                        "%DOCKER_EXE%" build -t employee-management:1.0 . || exit /b 1
                         "%DOCKER_EXE%" save -o employee-management.tar employee-management:1.0 || exit /b 1
 
                         scp -o StrictHostKeyChecking=no -i "%SSH_KEY%" employee-management.tar %SSH_USER%@40.192.16.224:/home/ubuntu/employee-management.tar || exit /b 1
